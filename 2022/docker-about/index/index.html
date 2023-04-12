@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于 Docker | 南山结庐</title><meta name="author" content="东篱先生"><meta name="copyright" content="东篱先生"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="发展历程2008 年，Solomon Hykes和他的朋友 Kamel Founadi、Sebastien Pahl 共同创立了一家名为DotCloud的公司，目标是利用一种叫做容器的技术来创建一种任何人都可以使用的编程工具。 2010 年，DotCloud 获得了创业孵化器 Y Combinator 的支持，并开始吸引到一些真正的投资，在接下来的 3 年中，DotCloud内部孵化了一款使用 G">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于 Docker">
+<meta property="og:url" content="https://www.buerya.cn/2022/docker-about/index/index.html">
+<meta property="og:site_name" content="南山结庐">
+<meta property="og:description" content="发展历程2008 年，Solomon Hykes和他的朋友 Kamel Founadi、Sebastien Pahl 共同创立了一家名为DotCloud的公司，目标是利用一种叫做容器的技术来创建一种任何人都可以使用的编程工具。 2010 年，DotCloud 获得了创业孵化器 Y Combinator 的支持，并开始吸引到一些真正的投资，在接下来的 3 年中，DotCloud内部孵化了一款使用 G">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.buerya.cn/img/2022/about-docker/979767-20220608220537883-1025728940.png">
+<meta property="article:published_time" content="2022-06-09T13:29:39.000Z">
+<meta property="article:modified_time" content="2022-10-19T14:40:00.247Z">
+<meta property="article:author" content="东篱先生">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="k8s">
+<meta property="article:tag" content="kubernetes">
+<meta property="article:tag" content="容器">
+<meta property="article:tag" content="云原生">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.buerya.cn/img/2022/about-docker/979767-20220608220537883-1025728940.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.buerya.cn/2022/docker-about/index/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="ar7mIVYsjkAi2k9jIuWk34S9A2aVwBdQqFkfL4AKEBQ"/><meta name="qihu_site_verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta name="baidu-site-verification" content="code-HKm4Y74Eag"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2f0991ea306cfd77733ccdc8fddcf43c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关于 Docker',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-19 22:40:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/assets/fonts/font.css"> <link rel="stylesheet" href="/assets/css/import_style.css"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="南山结庐" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-table-list"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-cubes"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 空间</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/memos/"><i class="fa-fw fa fa-cloud-rain"></i><span> 说说</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('/img/2022/about-docker/979767-20220608220537883-1025728940.png')"><nav id="nav"><span id="blog-info"><a href="/" title="南山结庐"><span class="site-name">南山结庐</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-table-list"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-cubes"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 空间</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/memos/"><i class="fa-fw fa fa-cloud-rain"></i><span> 说说</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">关于 Docker</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-09T13:29:39.000Z" title="发表于 2022-06-09 21:29:39">2022-06-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-19T14:40:00.247Z" title="更新于 2022-10-19 22:40:00">2022-10-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/Docker/">Docker</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="关于 Docker"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="发展历程"><a href="#发展历程" class="headerlink" title="发展历程"></a>发展历程</h2><p>2008 年，<code>Solomon Hykes</code>和他的朋友 Kamel Founadi、Sebastien Pahl 共同创立了一家名为<code>DotCloud</code>的公司，目标是利用一种叫做容器的技术来创建一种任何人都可以使用的编程工具。</p>
+<p>2010 年，DotCloud 获得了创业孵化器 Y Combinator 的支持，并开始吸引到一些真正的投资，在接下来的 3 年中，<code>DotCloud</code>内部孵化了一款使用 Go 语言编写，C&#x2F;S 架构，名为 Docker 的产品。</p>
+<p>2013 年 3 月，创始人<code>Solomon Hykes</code>在 PyCon 大会上首次公开介绍了 Docker 这一产品。其<code>创新式镜像格式</code>以及<code>容器运行时</code>迅速成为社区、客户和更广泛行业的实际标准和基石。可移植的形式和易于使用的工具给应用程序和基础设施之间创造了独立性。容器技术逐渐大众化并成为主流。</p>
+<p>docker 最初是在<code>Ubuntu 12.04</code>上开发实现的，而<code>Red Hat</code>则要从<code>6.5</code>开始才对其进行支持。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png"></p>
+<p>2013 年 3 月 20 日，DotCloud 发布了 Docker 的首个版本，并将 Docker 源码进行了 开源。</p>
+<p>2013 年 9 月，红帽公司成为 Docker 的主要合作伙伴，利用 Docker 来驱动他的 OpenShift 云业务。</p>
+<p>随后，谷歌、亚马逊以及 DigitalOcean 也迅速的在其云服务平台提供了 Docker 的支持。主流云厂商的加入，加速了 Docker 的发展，Docker 技术也至此开始风靡全球。</p>
+<p>2013 年底，Docker 公司名称也由<code>DotCloud Inc</code>更改为<code>Docker Inc</code>，并全力的主攻到 Docker 项目开发中。</p>
+<p>2014 年 6 月，在<code>DockerCon</code>大会上 Docker 正式发布了 1.0 版本。这意味着 Docker 的稳定性和可靠性已经基本满足了生产环境的运行需求。会议上同时也发布 Docker Image 的镜像仓库 Docker Hub。</p>
+<p>与此同时，已经有 10 年以上容器管理编排经验的谷歌终于出手了，基于自己内部内部强大的 Borg 系统使用 Go 语言重写出来目前最火的容器编排工具：<code>Kubernetes</code>。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220555533-1493806359.png"></p>
+<p>2014 年 8 月，Docker Inc 宣布将用于 PaaS 业务服务的 DotCloud 软件出售给德国柏林的 PaaS 服务厂商 CloudControl，自以，DotCloud 正式的和 Docker 分道扬镳。</p>
+<p>2014 年 12 月，DockerConEU 大会上，<code>Docker Swarm</code> （Docker 集群管理工具）和 <code>Docker Machine</code> （部署 Docker 主机的命令工具）同时面世。</p>
+<p>容器技术不只有 Docker，很早之前 Google 就投资了 CoreOS 来做竞争的容器 <code>Rocket（rkt）</code>。那时三家鼎立：Docker &#x2F; Rocket &#x2F; Warden。</p>
+<p>2015 年 6 月，为了避免惨烈的竞争，由 Docker、IBM、微软、红帽及 Google 等厂商所组成的开放容器项目 <code>OCP</code> 联盟成立，隶属 Linux 基金会。该项目旨在建立软件容器的通用标准。Docker 将捐赠其软件容器格式，运行时以及相关规范的代码。应用容器规范（<code>appc</code>）计划的领导者，包括创始成员 CoreOS，也将把他们的技术领导力和支持带到 OCP。</p>
+<p>2015 年，Docker 发布了 <code>runC</code> ，一个轻量级的跨平台的容器运行时命令行小工具。docker 将最初实现由 <code>LXC，0.7 版本开始去除</code> 转为自行开发的 <code>libcontainer</code>。用户可以直接利用 libcontainer 运行容器，而无需通过 docker engine。这意味着 Docker 真正解决了跨平台的问题，真正做到一次构建到处运行。</p>
+<p>2016 年 6 月，DockerCon 大会上，Docker 宣布了 <code>Open Container Initiative，OCI</code> 正式成立 。意在业界一起合作，开发一个开放的、标准的容器格式和 Runtime。</p>
+<p>在 OCI 标准制定后，Docker 也将 <code>Containerd</code> 独立拆分，并将其捐赠给了社区。这意味着 Docker 将容器的管理功能移出自身的核心引擎，移入了一个单独的守护进程。</p>
+<p>同时，人们也逐渐意识到，容器技术本身的价值是在于容器的编排。然而 Docker 却放弃了自己的 Swarm 项目，想着将容器的编排和集群的管理功能添加到 Docker 自身项目当中。这和 Kubernetes 推进民主化架构，通过暴露 Kubernetes API 让更多的人来不断丰富 Kubernetes 的插件的方案截然相反，当然最终的结果大家也看到了。</p>
+<p>2017 年 2 月， 从版本 <code>1.13</code> 开始，Docker 版本号开始遵循 <code>YY.MM-xx</code> 格式，并以每月发布一个前沿版（Edge），每季度发布一个稳定版（Stable）的进度更新。</p>
+<p>2017 年是容器成为主流技术的一年，在 Austin 举办的 DockerCon 上，开源 Docker 项目正式命名为 <code>Moby</code> 项目。GitHub 上的 docker&#x2F;docker 库也被转移到了 moby&#x2F;moby，并且拥有了项目自己的 Logo。同时，Docker Inc 公司将 Docker 本身拆分为 <code>Docker-CE</code> 开源社区免费版和 <code>Docker-EE</code> 闭源商业版。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220621806-584954900.png"></p>
+<p>至此，容器天下三分。其中 Moby 由社区维护，Docker-CE 由 Docker 公司维护，Docker-EE 属 Docker 公司闭源商品。</p>
+<p>2018 年 3 月，Docker 公司创始人 Solomon Hykes 在 Docker 博客上宣布已正式从 Docker 公司离职，不再担任公司的日常运作工作。未来的身份只是 Docker 的董事会成员、主要股东，以及 Docker 维护者。</p>
+<h2 id="为何选择"><a href="#为何选择" class="headerlink" title="为何选择"></a>为何选择</h2><p>由于硬件的飞速发展，服务器的性能也随之增强。单个业务的发布无法充分利用硬件资源，导致资源利用率较低。但是如果同一套服务器运行多个业务又可能会互相的影响，产生一系列的问题。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220643777-10168043.png"></p>
+<p>和传统的 VM 虚拟化相比，docker 存在下面的一下优势：</p>
+<h3 id="更高效的利用系统资源"><a href="#更高效的利用系统资源" class="headerlink" title="更高效的利用系统资源"></a>更高效的利用系统资源</h3><p>由于 docker 不像传统的 VM 虚拟化需要进行硬件虚拟以及运行完整操作系统，所以系统开销更低，对系统资源的利用率自然更高。无论是应用执行速度、内存损耗还是文件存储速度，都要比传统虚拟化技术更高效。</p>
+<h3 id="更快速的启动时间"><a href="#更快速的启动时间" class="headerlink" title="更快速的启动时间"></a>更快速的启动时间</h3><p>传统的虚拟机技术启动应用服务往往需要数分钟，而 Docker 容器应用，由于直接运行于宿主内核，无需启动完整的操作系统，因此可以做到秒级、甚至毫秒级的启动时间。大大的节约了开发、测试、部署的时间。</p>
+<h3 id="一致的运行环境"><a href="#一致的运行环境" class="headerlink" title="一致的运行环境"></a>一致的运行环境</h3><p>开发过程中一个常见的问题是环境一致性问题。由于开发环境、测试环境、生产环境的不一致，导致有些 bug 并未在开发过程中被发现。而 Docker 的镜像提供了除内核外完整的运行时环境，确保了应用运行环境一致性，从而不会再出现 「这段代码在我机器上没问题啊」 这类问题。</p>
+<h3 id="持续交付和部署"><a href="#持续交付和部署" class="headerlink" title="持续交付和部署"></a>持续交付和部署</h3><p>对开发和运维人员来说，最希望的就是一次创建，到处运行。使用 Docker 可以通过定制应用镜像来实现持续集成、持续交付、部署。开发人员可以通过 Dockerfile 来进行镜像构建测试，而运维人员则可以直接在生产环境中快速部署该镜像。由于 Dockerfile 的构建透明化，不仅开发团队可以理解应用运行环境，运维团队也可以更好的理解应用运行所需条件，帮助更好的在生产环境中部署。</p>
+<h3 id="更轻松的迁移"><a href="#更轻松的迁移" class="headerlink" title="更轻松的迁移"></a>更轻松的迁移</h3><p>由于 Docker 确保了执行环境的一致性，使得应用的迁移更加容易。Docker 可以在很多平台上运行，无论是物理机、虚拟机、公有云、私有云，甚至是笔记本，其运行结果是一致的。因此可以很轻易的将应用从一个平台迁移到另一个平台上，而且无需担心运行环境的变化导致应用无法正常运行的情况。</p>
+<h3 id="更轻松的维护和扩展"><a href="#更轻松的维护和扩展" class="headerlink" title="更轻松的维护和扩展"></a>更轻松的维护和扩展</h3><p>Docker 使用的分层存储以及镜像的技术，使得应用重复部分的复用更为容易，也使得应用的维护更新更加简单，基于基础镜像进一步扩展镜像也变得非常简单。此外，Docker 团队同各个开源项目团队一起维护了一大批高质量的官方镜像，既可以直接在生产环境使用，又可以作为基础进一步定制，大大的降低了应用服务的镜像制作成本。</p>
+<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><p>docker 主要包含了四个核心的概念，其关系如图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220610224042637-1318914544.png"></p>
+<h3 id="镜像（Image）"><a href="#镜像（Image）" class="headerlink" title="镜像（Image）"></a>镜像（Image）</h3><p>操作系统可以分为 <code>内核</code> 和 <code>用户空间</code>。以 Linux 为例，在内核启动后，会挂载 <code>root</code> 文件系统来提供用户空间支持。</p>
+<p>镜像其实就相当于一个 root 文件系统。比如 ubuntu 镜像，它本身就包含了一套完整的 ubuntu 最小化文件系统。</p>
+<p>当然，镜像是一个特殊的文件系统。除了包含文件以外，还包含了一些为容器运行时准备的配置参数，如：匿名卷，环境变量，用户等。</p>
+<blockquote>
+<p>镜像是不包含任何动态数据的，在镜像构建之后里面的内容就不会再发生改变。</p>
+</blockquote>
+<p>作为一个操作系统，即使是最小化，其大小也不小。所以 docker 在设计之时，就利用 Union FS 技术，将镜像设计为分层存储。</p>
+<p>镜像在构建时会一层一层的叠加。前一层对于后一层都是只读的。这意味着用户想要修改镜像里面的内容，只能自己再加一层，形成一个新的镜像。所以，不管你如何修改新的镜像，其底层的镜像是不会改变的。好处在于：</p>
+<blockquote>
+<p>多个用到相同层级镜像的新镜像可以复用同一层，这样既能节省磁盘空间，也能提升镜像的制作速度，避免每次搞一个新的镜像就得去拉一次底层镜像。毕竟一个操作系统镜像往往都是几百 M 往上。</p>
+</blockquote>
+<h3 id="容器（Container）"><a href="#容器（Container）" class="headerlink" title="容器（Container）"></a>容器（Container）</h3><p>镜像（Image）和容器（Container）的关系就像编程语言中常说的类和实例的关系。镜像属于静态定义，容器是镜像的运行时实体。容器可以被创建，启动，暂停，停止，删除等。</p>
+<blockquote>
+<p>容器的实质是进程。</p>
+</blockquote>
+<p>但和宿主机本身运行的进程不同，容器的进程运行在独立的名称空间中。这使得容器可以拥有自己独立的文件系统，网络，进程，用户等。</p>
+<p>由于镜像的分层特性，每个运行的容器都相当于在镜像的基础上创建了一个当前容器的存储层用于写入数据。但这个存储层会随着容器的销毁而删除。</p>
+<p>为了保障数据的安全，同时符合 docker 的设计规范，所有的文件，数据的写入都应该直接写入到额外挂载的 数据卷（Volume） 或者 绑定的宿主机目录 中。跳过 docker 存储层，直接持久化到宿主机本地或者外部存储，也能提升性能和稳定性。</p>
+<blockquote>
+<p>数据卷的生命周期独立于容器，不会随着容器的销毁而删除。</p>
+</blockquote>
+<h3 id="注册点（Registry）和仓库（Repository）"><a href="#注册点（Registry）和仓库（Repository）" class="headerlink" title="注册点（Registry）和仓库（Repository）"></a>注册点（Registry）和仓库（Repository）</h3><p>镜像构建完成之后可以很容易在本机运行，但是如果其他服务器想要使用该镜像，就需要另外一个服务来专门负责集中存储，分发镜像。这个服务就是 <code>注册点（Registry）</code>。</p>
+<blockquote>
+<p>一个注册点由一个或者多个仓库组成。</p>
+</blockquote>
+<p>所谓的 <code>仓库（Repository）</code>，就是用于存放同一个镜像不同版本的集合。比如：centos 仓库，它可能包含 centos:7 和 centos:8 镜像。</p>
+<blockquote>
+<p>一般通过 &lt;仓库名称&gt;:&lt;标签&gt; 这样的格式来区分镜像，如果没有指定标签，则默认使用 latest 标签。</p>
+</blockquote>
+<p>仓库名称往往也是由两段组成，比如：dylan&#x2F;centos 仓库。前者用于区分在多用户的注册点中的用户名，后者一般都是软件名。也比如：dylan&#x2F;nginx。但这并非绝对，某些仓库就没有用户名，这取决于注册点的配置。</p>
+<p>常见的注册点分为两类：<br>    - 开放注册点：<br>      + 网上开放给用户的注册点。用户可以在上面创建自己的仓库，镜像。也可以拉取使用别人的镜像。<br>      + 最常见的 registry 就是 docker 官方提供的 Docker Hub，它也是 docker 默认的 registry。上面有着大量的官方镜像供人们使用。<br>      + 此外还有阿里云，Google 等也提供了开放的 resgistry。<br>    - 私有注册点：<br>      + 出于数据的安全性考虑，公司使用的注册点一般都是自己搭建或者云厂商们提供的私有服务。其特点在于只有授权的用户才能看到并使用它的镜像。<br>      + docker 官方开源的 docker registry 镜像能够搭建私有仓库，但是该仓库只有 API 功能，没有图形化界面。<br>      + 生产中用户一般使用 Harbor 或者 Sonatype Nexus 搭建自己的私有注册点。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.buerya.cn">东篱先生</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.buerya.cn/2022/docker-about/index/">https://www.buerya.cn/2022/docker-about/index/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.buerya.cn" target="_blank">南山结庐</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/docker/">docker</a><a class="post-meta__tags" href="/tags/k8s/">k8s</a><a class="post-meta__tags" href="/tags/kubernetes/">kubernetes</a><a class="post-meta__tags" href="/tags/%E5%AE%B9%E5%99%A8/">容器</a><a class="post-meta__tags" href="/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</a></div><div class="post_share"><div class="social-share" data-image="/img/2022/about-docker/979767-20220608220537883-1025728940.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/docker-install/index/" title="安装Docker"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">安装Docker</div></div></a></div><div class="next-post pull-right"><a href="/2022/container-technology/index/" title="容器技术"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">容器技术</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/container-technology/index/" title="容器技术"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-08</div><div class="title">容器技术</div></div></a></div><div><a href="/2022/docker-assets/index/" title="资源限制"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-20</div><div class="title">资源限制</div></div></a></div><div><a href="/2022/docker-container/index/" title="容器管理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-19</div><div class="title">容器管理</div></div></a></div><div><a href="/2022/docker-hub/index/" title="镜像管理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-13</div><div class="title">镜像管理</div></div></a></div><div><a href="/2022/docker-install/index/" title="安装Docker"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-11</div><div class="title">安装Docker</div></div></a></div><div><a href="/2022/docker-image/index/" title="镜像制作"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-20</div><div class="title">镜像制作</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">东篱先生</div><div class="author-info__description">宁愿花时间去修炼不完美的自己&#44;也不要浪费时间去期待完美的别人。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/quewen08"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:trover@foxmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fa fa-envelope" style="color: #24292e;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="Atom"><i class="fa fa-rss" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">新的一年，感謝訪問本站，若喜歡請收藏 ^_^</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">发展历程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BD%95%E9%80%89%E6%8B%A9"><span class="toc-number">2.</span> <span class="toc-text">为何选择</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E9%AB%98%E6%95%88%E7%9A%84%E5%88%A9%E7%94%A8%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90"><span class="toc-number">2.1.</span> <span class="toc-text">更高效的利用系统资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E5%BF%AB%E9%80%9F%E7%9A%84%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4"><span class="toc-number">2.2.</span> <span class="toc-text">更快速的启动时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%87%B4%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">2.3.</span> <span class="toc-text">一致的运行环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E5%92%8C%E9%83%A8%E7%BD%B2"><span class="toc-number">2.4.</span> <span class="toc-text">持续交付和部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E8%BD%BB%E6%9D%BE%E7%9A%84%E8%BF%81%E7%A7%BB"><span class="toc-number">2.5.</span> <span class="toc-text">更轻松的迁移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E8%BD%BB%E6%9D%BE%E7%9A%84%E7%BB%B4%E6%8A%A4%E5%92%8C%E6%89%A9%E5%B1%95"><span class="toc-number">2.6.</span> <span class="toc-text">更轻松的维护和扩展</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">3.</span> <span class="toc-text">核心概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%95%9C%E5%83%8F%EF%BC%88Image%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">镜像（Image）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%EF%BC%88Container%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">容器（Container）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E7%82%B9%EF%BC%88Registry%EF%BC%89%E5%92%8C%E4%BB%93%E5%BA%93%EF%BC%88Repository%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">注册点（Registry）和仓库（Repository）</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/docker-network/index/" title="网络管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络管理"/></a><div class="content"><a class="title" href="/2022/docker-network/index/" title="网络管理">网络管理</a><time datetime="2022-10-21T12:11:19.000Z" title="发表于 2022-10-21 20:11:19">2022-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/docker-assets/index/" title="资源限制"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="资源限制"/></a><div class="content"><a class="title" href="/2022/docker-assets/index/" title="资源限制">资源限制</a><time datetime="2022-10-20T13:39:39.000Z" title="发表于 2022-10-20 21:39:39">2022-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/docker-volume/index/" title="数据持久化"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据持久化"/></a><div class="content"><a class="title" href="/2022/docker-volume/index/" title="数据持久化">数据持久化</a><time datetime="2022-09-21T13:39:39.000Z" title="发表于 2022-09-21 21:39:39">2022-09-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/docker-image/index/" title="镜像制作"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="镜像制作"/></a><div class="content"><a class="title" href="/2022/docker-image/index/" title="镜像制作">镜像制作</a><time datetime="2022-08-20T13:29:39.000Z" title="发表于 2022-08-20 21:29:39">2022-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/docker-container/index/" title="容器管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/2022/about-docker/979767-20220608220537883-1025728940.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="容器管理"/></a><div class="content"><a class="title" href="/2022/docker-container/index/" title="容器管理">容器管理</a><time datetime="2022-07-19T13:29:39.000Z" title="发表于 2022-07-19 21:29:39">2022-07-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2023 By 东篱先生</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener external nofollow noreferrer" href="http://buerya.cn/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'LoojPRMy175IgqwnQtytrgOY-9Nh9j0Va',
+      appKey: '45VXhysB6in2v1IOL1kaC5tQ',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script data-pjax src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/echarts/5.3.0-rc.1/echarts.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
